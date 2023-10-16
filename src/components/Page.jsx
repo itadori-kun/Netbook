@@ -2,25 +2,25 @@ import React from 'react'
 import Navigation from './Navigation'
 // import { Link } from 'react-router-dom'
 import Card from 'react-bootstrap/Card'
-import hero from '../images/hero.svg'
-import meeting from '../images/meeting.svg'
-import work from '../images/work.svg'
-import connect from '../images/connect.svg'
-import team1 from '../images/team2.png'
-import team2 from '../images/team3.png'
-import team3 from '../images/team4.png'
-import team11 from '../images/team1.png'
-import ellipse from '../images/Ellipse.png'
-import star from '../images/starIcon.svg'
-import trophy from '../images/trophy.svg'
-import ellipse13 from '../images/Ellipse13.svg'
-import ellipse14 from '../images/Ellipse14.png'
+import hero from '../assets/hero.svg'
+import meeting from '../assets/meeting.svg'
+import work from '../assets/work.svg'
+import connect from '../assets/connect.svg'
+import team1 from '../assets/team2.png'
+import team2 from '../assets/team3.png'
+import team3 from '../assets/team4.png'
+import team11 from '../assets/team1.png'
+import ellipse from '../assets/Ellipse.png'
+import star from '../assets/starIcon.svg'
+import trophy from '../assets/trophy.svg'
+import ellipse13 from '../assets/Ellipse13.svg'
+import ellipse14 from '../assets/Ellipse14.png'
 import ellipse15 from '../images/Ellipse15.png'
 import Container from 'react-bootstrap/Container'
 import Button from 'react-bootstrap/Button'
-import arrowIcon from '../images/arrowRightColored.svg'
-import arrow from '../images/arrowWhite.svg'
-import arrowIcon2 from '../images/arrowRightGrey.svg'
+import arrowIcon from '../assets/arrowRightColored.svg'
+import arrow from '../assets/arrowWhite.svg'
+import arrowIcon2 from '../assets/arrowRightGrey.svg'
 
 const Page = () => {
   return (
@@ -211,7 +211,7 @@ const Page = () => {
             </Card>
           </div>
         </section>
-        <section className='theTeam d-flex flex-column justify-content-between align-items-center px-md-4'>
+        <section className='theTeam d-flex flex-column justify-content-between align-items-center px-md-4'>assets
           <div className='d-flex justify-content-center align-items-center box flex-column'>
             <Card className='text-center border-0'>
               <Card.Body>

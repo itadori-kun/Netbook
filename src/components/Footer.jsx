@@ -1,6 +1,6 @@
 import React from 'react'
 import Nav from 'react-bootstrap/Nav'
-import logo from '../images/logo.svg'
+import logo from '../assets/logo.svg'
 import {
   FaTwitter,
   FaInstagram,
