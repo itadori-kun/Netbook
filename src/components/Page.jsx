@@ -211,7 +211,7 @@ const Page = () => {
             </Card>
           </div>
         </section>
-        <section className='theTeam d-flex flex-column justify-content-between align-items-center px-md-4'>assets
+        <section className='theTeam d-flex flex-column justify-content-between align-items-center px-md-4'>
           <div className='d-flex justify-content-center align-items-center box flex-column'>
             <Card className='text-center border-0'>
               <Card.Body>
