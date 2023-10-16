@@ -1,0 +1,1061 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Poppins:wght@600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+:root {
+  font-family: 'Inter', sans-serif;
+  line-height: 1.5;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+//  Resets
+$mainColor:#217bf4;
+$secondaryColor:#0a093d;
+$secColor2:#656464;
+$mainColorTrans:#1f7bf41a;
+$btnColor:#2f2c4a;
+$ff:'Inter',
+sans-serif;
+$tablet-layout: 991px;
+$tabletScLayout: 767px;
+$smallLayout: 575px;
+
+// Navigation and hero page
+.mainHero {
+  background: linear-gradient(312deg, #d4e7fe -15.24%, #fff 78.85%);
+  height: 746px;
+  margin-bottom: 88px;
+
+  .navigation {
+    .search {
+      width: 18px;
+      height: 18px;
+      top: 8px;
+    }
+  }
+
+  .heroSection {
+    height: 656px;
+
+
+    .heroDetails {
+      width: 50%;
+
+      .note {
+        background-color: $mainColorTrans;
+        width: 177px;
+        padding: 12px 0;
+
+        p {
+          font-size: 12px;
+          line-height: 12px;
+          color: $mainColor;
+          font-family: $ff;
+        }
+      }
+
+      h1 {
+        margin-top: 4px;
+        font-family: $ff;
+        line-height: 66px;
+        font-size: 56px;
+        color: $secondaryColor;
+        max-width: 450px;
+      }
+
+      .heroParagraph {
+        font-size: 18px;
+        margin: 2px 0 42px;
+        color: $secColor2;
+        font-family: $ff;
+        line-height: 28px;
+        max-width: 450px;
+      }
+
+      .heroLinks {
+
+        a {
+          width: fit-content;
+          font-family: $ff;
+          border: 1px solid hsla(214, 91%, 54%, 0.503);
+          color: $mainColor;
+          line-height: 20px;
+          font-size: 14px;
+          display: block;
+          cursor: pointer;
+
+          &:first-child {
+            background-color: $mainColor;
+            color: #fff;
+          }
+
+          &:link,
+          &:visited {
+            color: $mainColor;
+          }
+
+          &:hover {
+            background-color: #6eabfa;
+            color: #fff;
+          }
+          &:active{
+            color: red;
+          }
+        }
+
+      }
+    }
+
+    .heroAvatars {
+      width: 50%;
+    }
+  }
+
+}
+
+.section2 {
+  height: 576px;
+  margin-bottom: 39px;
+
+  .left {
+    .card-body {
+      padding: 0;
+
+      // width: ;
+      .subtitle {
+        font-size: 18px;
+        line-height: 18px;
+        color: $mainColor !important;
+        font-family: $ff;
+        width: fit-content;
+      }
+
+      .title {
+        line-height: 48px;
+        font-size: 36px;
+        font-family: $ff;
+        color: $secondaryColor;
+      }
+
+      .card-text {
+        font-family: $ff;
+        line-height: 28px;
+        font-size: 16px;
+        color: $secColor2;
+        max-width: 408px;
+        margin-bottom: 32px;
+
+      }
+
+    }
+
+    .bullet-container {
+      ul {
+        li {
+          div {
+            width: 18px;
+            height: 18px;
+            background-color: $mainColorTrans;
+
+            p {
+              background-color: $mainColor;
+              width: 8px;
+              height: 8px;
+            }
+          }
+
+          font-size: 18px;
+          font-family: $ff;
+          line-height: 18px;
+          color: #171648;
+        }
+      }
+    }
+  }
+
+  .imgContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+
+    div {
+      height: fit-content;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}
+
+.achievements {
+  height: 490px;
+  margin-bottom: 20px;
+
+  .flexbox {
+    gap: 30px;
+
+    .rating {
+      width: 336px;
+      padding: 40px 18px 40px 40px;
+
+      .card-title {
+        font-family: $ff;
+        color: $secondaryColor;
+        font-size: 26px !important;
+        line-height: 20px;
+        margin-bottom: 22px;
+      }
+
+      .card-subtitle {
+        height: 38px;
+        margin-bottom: 30px;
+        font-family: $ff;
+
+        img {
+          width: 38px;
+          height: 100%;
+        }
+
+        .ellipse13 {
+          margin-left: -10px;
+        }
+
+        .ellipse14 {
+          margin-left: -20px;
+        }
+
+        span {
+          color: #5d5b70;
+          font-size: 16px;
+          line-height: 18px;
+          font-family: $ff;
+
+          &:first-of-type {
+            color: $mainColor;
+          }
+        }
+
+        p {
+          color: #5d5b70;
+        }
+
+
+      }
+
+      .card-text {
+        font-size: 16px;
+        font-family: $ff;
+        line-height: 26px;
+        color: #8c8c8c;
+        margin-bottom: 40px;
+      }
+
+      button {
+        font-family: $ff;
+        font-size: 16px;
+        line-height: 16px;
+        color: $mainColor;
+
+        &:hover{
+          color: #6eabfa;
+        }
+
+      }
+
+      .btn-grey {
+        color: #4a4a56;
+      }
+
+      .box {
+        .card-subtitle {
+          font-size: 18px;
+          font-family: $ff;
+          line-height: 18px;
+          color: $mainColor;
+          height: fit-content;
+        }
+
+        .card-title {
+          color: $secondaryColor;
+          font-size: 36px;
+          line-height: 48px;
+          font-family: $ff;
+          max-width: 381px;
+          margin-bottom: 18px;
+        }
+
+        .card-text {
+          font-size: 16px;
+          line-height: 28px;
+          color: #656464;
+          font-family: $ff;
+          padding-right: 42px;
+          margin-bottom: 38px;
+        }
+
+        button {
+          padding: 21px 33px;
+          background-color: $mainColor;
+          &:hover{
+            background-color: #6eabfa;
+          }
+        }
+      }
+
+      &:last-of-type {
+        width: 381px;
+        padding-left: 20px;
+
+        .card-text {
+          padding: 0;
+          margin-bottom: 20px;
+        }
+      }
+    }
+
+  }
+}
+
+.theTeam {
+  height: 776px;
+  padding: 84px 0;
+
+  // margin-bottom: 130px;
+  .box {
+    .card {
+      margin-bottom: 38px;
+
+      .card-body {
+        padding: 0;
+
+        .card-subtitle {
+          color: $mainColor !important;
+          line-height: 18px;
+          font-size: 18px;
+          font-family: $ff;
+        }
+
+        .card-title {
+          font-size: 36px;
+          font-family: $ff;
+          line-height: 36px;
+          color: $secondaryColor;
+        }
+
+        .card-text {
+          width: 454px;
+          line-height: 28px;
+          font-family: $ff;
+          font-size: 16px;
+          color: #656464
+        }
+      }
+    }
+
+    .btn-box {
+      background-color: $mainColorTrans;
+      width: 474px;
+      padding: 8px 2px;
+
+      button {
+        // background-color: none;
+        color: $btnColor;
+        font-family: $ff;
+        line-height: 16px;
+        font-size: 16px;
+        letter-spacing: .16px;
+        padding: 20px 0;
+
+        &:hover{
+          background-color: #6eabfa !important;
+          color: #fff;
+        }
+
+        &:active {
+          color: $mainColor !important;
+        }
+      }
+    }
+  }
+
+  .team {
+    // margin-top: 44px;
+    gap: 30px;
+
+    .card {
+      width: 270px;
+      height: 316px;
+      padding: 30px 0;
+      border-radius: 14px;
+      background: #FFF;
+      box-shadow: 0px 34px 68px 0px rgba(116, 115, 128, 0.10);
+
+      .card-img-top {
+        width: 126px;
+      }
+
+      .div1 {
+        background-image: url(./images/teamBorder.svg);
+        background-repeat: no-repeat;
+        width: 170px;
+        height: 170px;
+
+        .div2 {
+          background-color: $mainColorTrans;
+          width: 100%;
+          height: 100%;
+          position: relative;
+        }
+
+        .div3 {
+          .card-img-top {
+            height: 130px;
+            background-color: transparent;
+            box-shadow: 0px -10px 50px 0px rgba(0, 64, 164, 0.05);
+          }
+
+
+        }
+      }
+
+
+      .name {
+        .ref {
+          font-size: 24px;
+          line-height: 26px;
+          font-family: $ff;
+          color: $btnColor;
+        }
+
+        .text {
+          font-size: 16px;
+          line-height: 16px;
+          font-family: $ff;
+        }
+
+      }
+    }
+  }
+
+}
+
+.footer {
+  // height: 172px;
+  background-color: #2b2b39;
+  padding: 58px 0;
+
+  .nav-item {
+    .logoText {
+      font-size: 24px !important;
+      line-height: 24px;
+    }
+
+    .nav-link {
+      font-size: 20px;
+      color: #fff;
+      line-height: 20px;
+      font-family: $ff;
+      &:hover{
+        color: rgb(210, 56, 56);
+      }
+      
+    }
+  }
+}
+
+@media (max-width: $tablet-layout) {
+  .mainHero {
+    height: auto;
+    margin-bottom: 78px;
+
+
+    .container {
+      max-width: 760px !important;
+
+      .heroSection {
+
+        .heroDetails {
+          h1 {
+            line-height: 56px;
+            font-size: 42px;
+          }
+
+          .heroLinks {
+            p {
+              a {
+                color: inherit;
+                font-size: inherit;
+                line-height: 14px;
+
+                &hover {
+                  color: inherit;
+                }
+              }
+
+              &:hover {
+                background-color: $mainColor;
+                color: #fff;
+              }
+            }
+          }
+        }
+      }
+    }
+
+
+  }
+
+  .box-small {
+    max-width: 760px !important;
+
+    .section2 {
+      .imgContainer {
+        grid-template-columns: repeat(2, 200px);
+      }
+    }
+  }
+
+  .achievements {
+    height: fit-content;
+
+    .flexbox {
+
+      .rating {
+        width: 100%;
+        padding: 40px;
+
+        .card-text {
+          width: 75%;
+        }
+
+        &:last-of-type {
+          width: 100%;
+
+          .card-title {
+            font-size: 36px !important;
+
+          }
+
+          .card-text {
+            margin-bottom: 40px;
+          }
+        }
+      }
+    }
+  }
+
+  .theTeam {
+    .team {
+      gap: 15px;
+
+      .card {
+        .div1 {
+          width: 150px;
+          height: 150px;
+          background-size: cover;
+        }
+
+        .name {
+          .ref {
+            font-size: 18px;
+          }
+
+          .text {
+            font-size: 14px;
+            line-height: 16px;
+          }
+
+        }
+      }
+    }
+
+  }
+
+  .footer {
+    padding: 28px 0;
+
+    .container {
+      max-width: 640px;
+
+      .nav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        .nav-item {
+          margin-left: 0;
+          text-align: center;
+
+          .logoText {
+            font-size: 24px !important;
+            line-height: 24px;
+          }
+
+
+        }
+
+        .mini-nav {
+          grid-template-columns: 1fr;
+          place-items: center;
+          margin-right: 0;
+          margin-bottom: 20px;
+        }
+
+        .socialIcons {
+          div {
+            display: flex;
+
+            // grid-template-columns:  1fr;
+            // gap: 20px !important;
+          }
+        }
+      }
+    }
+
+  }
+}
+
+
+
+@media(max-width: $tabletScLayout) {
+  .mainHero {
+    .container {
+      max-width: 600px;
+    }
+
+    .heroSection {
+      height: 556px;
+
+      .heroDetails {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        height: 100%;
+
+        h1 {
+          font-size: 66px;
+          line-height: 76px;
+        }
+
+        .heroParagraph {
+          font-size: 20px;
+          margin: 2px 0 42px;
+          width: 75%;
+        }
+
+        .heroLinks {
+          p {
+            width: fit-content;
+            font-size: 16px;
+            line-height: 16px;
+
+
+
+            a {
+              color: inherit;
+              font-size: inherit;
+              line-height: 14px;
+
+              &hover {
+                color: inherit;
+              }
+            }
+
+            &:hover {
+              background-color: $mainColor;
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+
+  }
+
+  .box-small {
+    max-width: 600px !important;
+    padding: auto 0 !important;
+
+    .section2 {
+      height: fit-content;
+      flex-direction: column;
+
+      .left {
+        .card-body {
+          .title {
+            width: 75%;
+          }
+        }
+      }
+
+      .imgContainer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        place-items: center;
+
+        div {
+          height: fit-content;
+
+        }
+      }
+    }
+  }
+
+  .achievements {
+    height: fit-content;
+
+    .flexbox {
+
+      .rating {
+
+        .card-text {
+          width: 100%;
+        }
+
+      }
+    }
+  }
+
+  .theTeam {
+    height: fit-content;
+
+    .box {
+      margin-bottom: 78px;
+    }
+
+    .team {
+      gap: 30px;
+      display: grid;
+      grid-template-columns: repeat((2, 1fr));
+      place-items: center;
+
+
+      .card {
+
+        .card-img-top {
+          width: 126px;
+        }
+
+        .div1 {
+
+
+          .div3 {
+            .card-img-top {
+              height: 150px;
+            }
+
+
+          }
+        }
+
+
+
+      }
+    }
+
+  }
+
+  .footer {
+    padding: 58px 0;
+
+    .container {
+
+      .socialIcons {
+        div {
+          grid-template-columns: repeat(4, 1fr);
+        }
+      }
+    }
+
+  }
+}
+
+@media(max-width: $smallLayout) {
+  .mainHero {
+
+    .container {
+      padding: 0;
+
+      .heroSection {
+        height: 560px;
+
+        .heroDetails {
+          width: 100%;
+
+          .note {
+            margin-bottom: 8px;
+
+            p {
+              text-align: center;
+              margin-bottom: 0;
+            }
+          }
+
+          h1 {
+            line-height: 52px;
+            font-size: 42px;
+            max-width: 400px;
+            margin-bottom: 20px;
+          }
+
+          .heroParagraph {
+            font-size: 18px;
+            width: 90%;
+          }
+
+          .heroLinks {
+            p {
+              font-size: 16px;
+              line-height: 16px;
+              padding: 16px;
+              margin-bottom: 0;
+
+
+
+              a {
+                color: inherit;
+                font-size: inherit;
+                line-height: 14px;
+
+                &hover {
+                  color: inherit;
+                }
+              }
+
+              &:hover {
+                background-color: $mainColor;
+                color: #fff;
+              }
+            }
+          }
+        }
+
+        .heroAvatars {
+          display: none;
+
+        }
+      }
+    }
+
+  }
+
+  .box-small {
+    padding: 16px !important;
+
+    .section2 {
+      height: fit-content;
+      margin-bottom: 40px;
+
+      .left {
+        margin-bottom: 40px;
+
+        .card-body {
+
+          .subtitle {
+            font-size: 16px;
+            line-height: 16px;
+            margin-bottom: 12px;
+          }
+
+          .title {
+            line-height: 52px;
+            font-size: 40px;
+            max-width: 420px;
+            width: 100%;
+            margin-bottom: 20px;
+          }
+
+          .card-text {
+            font-size: 18px;
+            // max-width: 408px;
+            margin-bottom: 42px;
+
+          }
+
+        }
+
+        .bullet-container {
+          ul {
+            li {
+              div {
+                width: 18px;
+                height: 18px;
+                background-color: $mainColorTrans;
+                text-align: center;
+
+                p {
+                  margin-bottom: 0;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .imgContainer {
+        grid-template-columns: 1fr;
+
+        div {
+          height: fit-content;
+          width: 100%;
+          margin-bottom: 22px;
+
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: center;
+          }
+
+        }
+
+        .small-img {
+          img {
+            margin-bottom: 24px;
+          }
+        }
+      }
+    }
+  }
+
+  .achievements {
+    height: fit-content;
+    margin-bottom: 30px;
+
+    .flexbox {
+      gap: 70px;
+
+      .rating {
+        padding: 20px;
+
+
+        .card-subtitle {
+
+          img {
+            width: 38px;
+            height: 100%;
+            margin-top: 4px;
+          }
+        }
+
+        .card-text {
+          padding-right: 20px;
+        }
+
+        .box {
+          .card-subtitle {
+            font-size: 16px;
+          }
+
+          .card-title {
+            font-size: 34px;
+            line-height: 44px;
+          }
+
+          .card-text {
+            font-size: 16px;
+            line-height: 28px;
+            padding-right: 0;
+            margin-bottom: 38px;
+            max-width: 474px;
+          }
+
+          button {
+            padding: 21px 26px;
+          }
+        }
+      }
+    }
+  }
+
+  .theTeam {
+    height: fit-content;
+
+    .box {
+      margin-bottom: 64px;
+
+      .card {
+        margin-bottom: 38px;
+
+        .card-body {
+          padding: 0;
+
+          .card-subtitle {
+            line-height: 18px;
+            font-size: 16px;
+          }
+
+          .card-title {
+            font-size: 28px;
+            line-height: 28px;
+          }
+
+          .card-text {
+            width: fit-content;
+            max-width: 454px;
+            line-height: 28px;
+            font-size: 16px;
+          }
+        }
+      }
+
+      .btn-box {
+        max-width: 474px;
+        padding: 8px 2px;
+
+        button {
+          padding: 16px 0;
+
+        }
+      }
+    }
+
+    .team {
+      display: grid;
+      grid-template-columns: 1fr;
+
+      .card {
+
+        .card-img-top {
+          width: 126px;
+        }
+
+        .div1 {
+          width: 170px;
+          height: 170px;
+          margin-bottom: 12px;
+
+          .div2 {
+            width: 100%;
+            height: 100%;
+          }
+
+          .div3 {
+            .card-img-top {
+              height: 150px;
+            }
+          }
+        }
+
+      }
+    }
+
+  }
+
+  .footer {
+    // height: 172px;
+    padding: 48px 0;
+
+  }
+}
